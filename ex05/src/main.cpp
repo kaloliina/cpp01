@@ -6,4 +6,3 @@ int main(void)
 	std::string line = "INFO";
 	harl.complain(line);
 }
-//need proper tests for these :D

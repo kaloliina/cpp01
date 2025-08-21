@@ -1,9 +1,8 @@
 #ifndef HARL_HPP
 #define HARL_HPP
-
 #include <iostream>
 #include <string>
-#include <iomanip>
+
 class Harl {
 private:
 	void debug(void);
@@ -12,8 +11,6 @@ private:
 	void error(void);
 public:
 	void complain( std::string level );
-	Harl();
-	~Harl();
 };
 
 #endif
