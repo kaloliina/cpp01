@@ -1,9 +1,7 @@
 #include "../include/Zombie.hpp"
 
-/*At times we use . or -> when we call function names
-- Dot operator should be used when you have the actual object.
-- Arrow operator is used when you have a pointer to an object
-THIS NEEDS TEST CASES*/
+/*THIS NEEDS TEST CASES
+and perhaps error messages if zombies dont have names or are less than 1*/
 int main(void)
 {
 	int i = 0;

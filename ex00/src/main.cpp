@@ -16,9 +16,9 @@ beyond the function in which it was created.
 */
 int main(void)
 {
-    Zombie *Zombie = newZombie("Sylvanas");
-    Zombie->announce();
-    randomChump("Jaina");
-    delete Zombie;
-    return (0);
+	Zombie *Zombie = newZombie("Sylvanas");
+	Zombie->announce();
+	randomChump("Jaina");
+	delete Zombie;
+	return (0);
 }

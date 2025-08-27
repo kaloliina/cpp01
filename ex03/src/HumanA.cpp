@@ -6,7 +6,7 @@ const members etc should be initalized. In HumanB situation, the member variable
 are default constructed before the body runs and then you assign new values inside.
 So when HumanA gets constructed, the weapon member cannot exist unbound, there is no default
 or NULL for it so it absolutely needs to have a valid reference.*/
-HumanA::HumanA(std::string name, Weapon &weapon) : weapon(weapon), name(name)
+HumanA::HumanA(std::string name, Weapon &weapon) : name(name), weapon(weapon)
 {
 }
 

@@ -5,8 +5,7 @@ but with randomChump, it's explicitly mentioned that they must announce themselv
 in the function whileas here it wasn't..? So keep here?*/
 Zombie* newZombie(std::string name)
 {
-    Zombie *newZombie;
-    newZombie = new Zombie(name);
-    newZombie->announce();
-    return (newZombie);
+	Zombie *newZombie;
+	newZombie = new Zombie(name);
+	return (newZombie);
 }

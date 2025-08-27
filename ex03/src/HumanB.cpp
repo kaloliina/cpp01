@@ -5,10 +5,7 @@ HumanB::HumanB(std::string name)
  this->weapon = NULL;
 }
 
-HumanB::~HumanB()
-{
-
-}
+HumanB::~HumanB() { }
 
 void HumanB::attack() const
 {
@@ -25,6 +22,3 @@ void HumanB::setWeapon(Weapon &weapon)
 {
 	this->weapon = &weapon;
 }
-    // Zombie *newZombie;
-    // newZombie = new Zombie(name);
-    // return (newZombie);

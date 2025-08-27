@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	std::string s1, s2;
 	s1 = argv[2];
 	s2 = argv[3];
-	while (getline(MyFile, line))
+	while (std::getline(MyFile, line))
 	{
 		while ((res = line.find(s1, res + 1)) != std::string::npos)
 		{
@@ -41,4 +41,5 @@ int main(int argc, char *argv[])
 	MyFile.close();
 	MyNewFile.close();
 }
-//Check if file is empty how it behaves?
+/*Wonder if we need a check for if file is empty, now it works as "expected"
+Also there's a mention of tests so this needs them too!*/
