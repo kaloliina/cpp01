@@ -1,19 +1,28 @@
 #include "../include/Zombie.hpp"
 
-/*THIS NEEDS TEST CASES
-and perhaps error messages if zombies dont have names or are less than 1*/
-int main(void)
+void testZombies(int nbr_zombies, std::string name, std::string test_type)
 {
-	int i = 0;
-	int nbr_zombies = 6;
-	Zombie *Zombie = zombieHorde(nbr_zombies, "Karoliina");
+	std::cout << test_type << std::endl;
+	Zombie *Zombie = zombieHorde(nbr_zombies, name);	
 	if (Zombie == NULL)
-		return (1);
-	while (i < nbr_zombies)
 	{
-		Zombie[i].announce();
-		i++;
+		std::cout << "Number of zombies is 0 or less!" << std::endl;
+		std::cout << "-----------------------------" << std::endl;	
+		return ;
+	}
+	for (int i = 0; i < nbr_zombies; i++)
+	{
+		Zombie[i].announce();		
 	}
 	delete[] Zombie;
-	return (0);
+	std::cout << "-----------------------------" << std::endl;	
+}
+
+int main(void)
+{
+	testZombies(10, "Karoliina", "10 zombies");
+	testZombies(100, "Karoliina", "100 zombies");
+	testZombies(10, "", "Zombies with no name");
+	testZombies(-1, "Karoliina", "Negative amount of zombies");
+	testZombies(0, "Karoliina", "Zero amount of zombies");
 }
