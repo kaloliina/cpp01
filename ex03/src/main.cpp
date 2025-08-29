@@ -32,5 +32,14 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	{
+		Weapon club = Weapon("banana");
+		HumanB karoliina("Karoliina");
+		karoliina.attack();
+		karoliina.setWeapon(club);
+		karoliina.attack();
+		club.setType("multiple bananas!");
+		karoliina.attack();
+	}
 	return 0;
 }

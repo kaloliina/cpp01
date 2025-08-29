@@ -1,6 +1,6 @@
 NAME = file_reading
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror
+CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = include/
