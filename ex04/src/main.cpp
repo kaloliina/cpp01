@@ -29,17 +29,16 @@ int main(int argc, char *argv[])
 	s2 = argv[3];
 	while (std::getline(MyFile, line))
 	{
-		while ((res = line.find(s1, res + 1)) != std::string::npos)
+		while (s1.size() != 0 && (res = line.find(s1, res)) != std::string::npos)
 		{
 			line.erase(res, s1.size());
 			line.insert(res, s2);
+			res = res + s2.size();
 		}
 		MyNewFile << line << std::endl;
 		res = 0;
-		std::cout << line << std::endl;
 	}
 	MyFile.close();
 	MyNewFile.close();
 }
-/*Wonder if we need a check for if file is empty, now it works as "expected"
-Also there's a mention of tests so this needs them too!*/
+//If replacer is empty, should we replace the replace string with nothing?
