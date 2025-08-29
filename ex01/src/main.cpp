@@ -4,10 +4,8 @@ void testZombies(int nbr_zombies, std::string name, std::string test_type)
 {
 	std::cout << test_type << std::endl;
 	Zombie *Zombie = zombieHorde(nbr_zombies, name);	
-	if (Zombie == NULL)
+	if (Zombie == nullptr)
 	{
-		std::cout << "Number of zombies is 0 or less!" << std::endl;
-		std::cout << "-----------------------------" << std::endl;	
 		return ;
 	}
 	for (int i = 0; i < nbr_zombies; i++)

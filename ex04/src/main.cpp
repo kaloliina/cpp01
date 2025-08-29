@@ -24,9 +24,7 @@ int main(int argc, char *argv[])
 	}
 	size_t res = 0;
 	std::string line;
-	std::string s1, s2;
-	s1 = argv[2];
-	s2 = argv[3];
+	std::string s1 = argv[2], s2 = argv[3];
 	while (std::getline(MyFile, line))
 	{
 		while (s1.size() != 0 && (res = line.find(s1, res)) != std::string::npos)
@@ -41,4 +39,3 @@ int main(int argc, char *argv[])
 	MyFile.close();
 	MyNewFile.close();
 }
-//If replacer is empty, should we replace the replace string with nothing?
