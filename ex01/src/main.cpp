@@ -23,4 +23,5 @@ int main(void)
 	testZombies(10, "", "Zombies with no name");
 	testZombies(-1, "Karoliina", "Negative amount of zombies");
 	testZombies(0, "Karoliina", "Zero amount of zombies");
+	return (0);
 }

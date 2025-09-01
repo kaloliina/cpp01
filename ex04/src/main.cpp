@@ -38,4 +38,5 @@ int main(int argc, char *argv[])
 	}
 	MyFile.close();
 	MyNewFile.close();
+	return (0);
 }
