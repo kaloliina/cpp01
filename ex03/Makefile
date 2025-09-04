@@ -4,9 +4,9 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = include/
-SRCS = $(wildcard $(SRC_DIR)*.cpp)
+SRCS = $(SRC_DIR)HumanA.cpp $(SRC_DIR)HumanB.cpp $(SRC_DIR)Weapon.cpp $(SRC_DIR)main.cpp
 OBJS = $(SRCS:$(SRC_DIR)%.cpp=$(OBJ_DIR)%.o)
-HEADERS = $(wildcard $(INC_DIR)/*.hpp)
+HEADERS = $(INC_DIR)Weapon.hpp $(INC_DIR)HumanA.hpp $(INC_DIR)HumanB.hpp
 
 all: $(NAME)
 
